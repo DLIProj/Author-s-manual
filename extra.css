@@ -18,7 +18,11 @@ body, html {
   font-weight: 600;
 }
 
-
+.md-typeset code {
+    font-size: 85%;
+    color: #c7254e;
+    border-radius: 4px;
+}
 /**/
 
 details.tiny {
