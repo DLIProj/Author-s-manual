@@ -367,13 +367,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#antora-process" class="md-nav__link">
-    Antora process
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#antora-commands" class="md-nav__link">
     Antora commands
   </a>
@@ -419,13 +412,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-local-serve" class="md-nav__link">
-    Install local serve
-  </a>
   
 </li>
         
@@ -605,13 +591,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#antora-process" class="md-nav__link">
-    Antora process
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#antora-commands" class="md-nav__link">
     Antora commands
   </a>
@@ -657,13 +636,6 @@
         
       </ul>
     </nav>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#install-local-serve" class="md-nav__link">
-    Install local serve
-  </a>
   
 </li>
         
@@ -731,14 +703,6 @@
                 
                 
                 <h1 id="authoring">Authoring<a class="headerlink" href="#authoring" title="Permanent link">&para;</a></h1>
-<p>Antora authring guidelines</p>
-<h2 id="antora-process">Antora process<a class="headerlink" href="#antora-process" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Do conversion (HTML/DocX/Markdown)</li>
-<li>Clean html</li>
-<li>Convert html to md</li>
-<li>Convert md to ascii</li>
-</ol>
 <h2 id="antora-commands">Antora commands<a class="headerlink" href="#antora-commands" title="Permanent link">&para;</a></h2>
 <h3 id="antora-fetch">Antora fetch<a class="headerlink" href="#antora-fetch" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="n">antora</span> <span class="n">antora</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
@@ -755,21 +719,6 @@
 <h4 id="local-playbookyml">local-playbook.yml<a class="headerlink" href="#local-playbookyml" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code><span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENABLED=true&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENGINE=lunr&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">antora</span> <span class="o">--</span><span class="n">generator</span> <span class="n">antora</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">lunr</span> <span class="n">local</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
 </code></pre></div>
-<h3 id="install-local-serve">Install local serve<a class="headerlink" href="#install-local-serve" title="Permanent link">&para;</a></h3>
-<ol>
-<li>Install server</li>
-</ol>
-<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span>
-<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">i</span> <span class="o">-</span><span class="n">g</span> <span class="n">http</span><span class="o">-</span><span class="n">server</span>
-
-<span class="n">OR</span> 
-
-<span class="n">yarn</span> <span class="k">global</span> <span class="n">add</span> <span class="n">http</span><span class="o">-</span><span class="n">server</span>
-</code></pre></div>
-</td></tr></table>
 <h3 id="serve">Serve<a class="headerlink" href="#serve" title="Permanent link">&para;</a></h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
