@@ -1,27 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://dliproj.github.io/notes/</loc>
+         <loc>https://docs.peachpie.io/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dliproj.github.io/notes/get-started/</loc>
+         <loc>https://docs.peachpie.io/get-started/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dliproj.github.io/notes/antora/</loc>
+         <loc>https://docs.peachpie.io/antora/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dliproj.github.io/notes/antora/authoring/</loc>
+         <loc>https://docs.peachpie.io/antora/authoring/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://dliproj.github.io/notes/antora/conversion/</loc>
+         <loc>https://docs.peachpie.io/antora/conversion/</loc>
+         <lastmod>2021-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.peachpie.io/mkdocs/</loc>
+         <lastmod>2021-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.peachpie.io/mkdocs/authoring/</loc>
+         <lastmod>2021-07-18</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.peachpie.io/mkdocs/conversion/</loc>
          <lastmod>2021-07-18</lastmod>
          <changefreq>daily</changefreq>
     </url>
