@@ -2,14 +2,14 @@
 site_name: 'Adarsh notes'
 site_description: 'Adarsh notes'
 site_author: 'adarsh'
-site_url: 'https://dliproj.github.io/notes'
+site_url: 'https://dliproj.github.io/Author-s-manual'
 
 # Repository
-repo_url: https://github.com/DLIProj/notes/
-edit_uri: https://github.com/DLIProj/notes/edit/master/docs/
+repo_url: https://github.com/DLIProj/Author-s-manual/
+edit_uri: https://github.com/DLIProj/Author-s-manual/edit/master/docs/
 
 # Copyright
-copyright: 'Copyright &copy; 2016 - 2021 Adarsh'
+copyright: 'Copyright &copy; 2016 - 2021 DLI IT Systems LLC'
 
 # Configuration
 theme:
