@@ -386,6 +386,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#markdown-to-docx" class="md-nav__link">
+    Markdown to Docx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#html-to-docx" class="md-nav__link">
     HTML to Docx
   </a>
@@ -402,6 +409,27 @@
         <li class="md-nav__item">
   <a href="#html-to-asciidoc" class="md-nav__link">
     HTML to ASCIIDOC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asciidoc-to-html" class="md-nav__link">
+    ASCIIDOC to HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asciidoc-to-docx" class="md-nav__link">
+    ASCIIDOC to Docx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ascii-to-docbook" class="md-nav__link">
+    ASCII to Docbook
   </a>
   
 </li>
@@ -533,6 +561,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#markdown-to-docx" class="md-nav__link">
+    Markdown to Docx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#html-to-docx" class="md-nav__link">
     HTML to Docx
   </a>
@@ -549,6 +584,27 @@
         <li class="md-nav__item">
   <a href="#html-to-asciidoc" class="md-nav__link">
     HTML to ASCIIDOC
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asciidoc-to-html" class="md-nav__link">
+    ASCIIDOC to HTML
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#asciidoc-to-docx" class="md-nav__link">
+    ASCIIDOC to Docx
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ascii-to-docbook" class="md-nav__link">
+    ASCII to Docbook
   </a>
   
 </li>
@@ -589,14 +645,58 @@
 <p>Docx to Markdown with images</p>
 <div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">-</span><span class="n">o</span> <span class="n">SalaryRegister</span><span class="o">.</span><span class="n">md</span> <span class="o">--</span><span class="n">extract</span><span class="o">-</span><span class="n">media</span><span class="o">=./</span> <span class="n">SalaryRegister</span><span class="o">.</span><span class="n">docx</span>
 </code></pre></div>
-<h2 id="html-to-docx">HTML to Docx<a class="headerlink" href="#html-to-docx" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">--</span><span class="n">reference</span><span class="o">-</span><span class="n">doc</span> <span class="n">pandocTheme</span><span class="o">.</span><span class="n">docx</span> <span class="o">-</span><span class="n">f</span> <span class="n">html</span> <span class="o">-</span><span class="n">t</span> <span class="n">docx</span> <span class="o">-</span><span class="n">o</span> <span class="n">DailyTS</span><span class="o">.</span><span class="n">docx</span> <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">site</span><span class="o">/</span><span class="n">wagetype</span><span class="o">-</span><span class="n">based</span><span class="o">-</span><span class="n">timesheet</span><span class="o">/</span>
+<h2 id="markdown-to-docx">Markdown to Docx<a class="headerlink" href="#markdown-to-docx" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">--</span><span class="n">reference</span><span class="o">-</span><span class="n">doc</span> <span class="n">twocolumns</span><span class="o">.</span><span class="n">docx</span> <span class="o">-</span><span class="n">o</span> <span class="n">UsersGuide18</span><span class="o">.</span><span class="n">docx</span> <span class="n">example122</span><span class="o">.</span><span class="n">text</span>
 </code></pre></div>
+<h2 id="html-to-docx">HTML to Docx<a class="headerlink" href="#html-to-docx" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">--</span><span class="n">reference</span><span class="o">-</span><span class="n">doc</span> <span class="n">pandocTheme</span><span class="o">.</span><span class="n">docx</span> <span class="o">-</span><span class="n">f</span> <span class="n">html</span> <span class="o">-</span><span class="n">t</span> <span class="n">docx</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span><span class="o">.</span><span class="n">docx</span> <span class="nb">input</span><span class="o">.</span><span class="n">html</span>
+</code></pre></div>
+<p><strong>Syntax Higlight</strong></p>
+<ol>
+<li>Run the following command. Use any of the available themes such as <code>espresso</code>, <code>haddock</code>, <code>kate</code>, <code>monochrome</code>, <code>pygments</code>, <code>tango</code>   and <code>zenburn</code>
+<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">--</span><span class="nb">print</span><span class="o">-</span><span class="n">highlight</span><span class="o">-</span><span class="n">style</span> <span class="n">pygments</span> <span class="o">&gt;</span> <span class="n">my_style</span><span class="o">.</span><span class="n">theme</span>
+</code></pre></div></li>
+<li>
+<p>Make changes to the generated <code>my_style.theme</code> file if required.</p>
+</li>
+<li>
+<p>Then run the conversion command
+<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">--</span><span class="n">reference</span><span class="o">-</span><span class="n">doc</span><span class="o">=</span><span class="n">custom</span><span class="o">-</span><span class="n">reference</span><span class="o">.</span><span class="n">docx</span> <span class="o">-</span><span class="n">f</span> <span class="n">html</span> <span class="o">-</span><span class="n">t</span> <span class="n">docx</span> <span class="o">-</span><span class="n">s</span> <span class="o">--</span><span class="n">highlight</span><span class="o">-</span><span class="n">style</span> <span class="n">my_style</span><span class="o">.</span><span class="n">theme</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span><span class="o">.</span><span class="n">docx</span> <span class="nb">input</span><span class="o">.</span><span class="n">html</span>
+</code></pre></div></p>
+</li>
+</ol>
 <h2 id="html-to-markdown">HTML to Markdown<a class="headerlink" href="#html-to-markdown" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>pandoc -s -r html pmm.html -o pmm.md
+<div class="highlight"><pre><span></span><code>pandoc -s -r --extract-media html pmm.html -o output.md
+</code></pre></div>
+<div class="highlight"><pre><span></span><code>pandoc -s -r --extract-media html input.html -o output.text
 </code></pre></div>
 <h2 id="html-to-asciidoc">HTML to ASCIIDOC<a class="headerlink" href="#html-to-asciidoc" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">-</span><span class="n">f</span> <span class="n">html</span> <span class="o">-</span><span class="n">t</span> <span class="n">asciidoctor</span> <span class="o">-</span><span class="n">o</span> <span class="n">PRL_PayrollSheet00</span><span class="o">.</span><span class="n">adoc</span> <span class="n">PRL_PayrollSheet00</span><span class="o">.</span><span class="n">html</span> 
+<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">-</span><span class="n">f</span> <span class="n">html</span> <span class="o">-</span><span class="n">t</span> <span class="n">asciidoctor</span> <span class="o">-</span><span class="n">o</span> <span class="n">outpot</span><span class="o">.</span><span class="n">adoc</span> <span class="nb">input</span><span class="o">.</span><span class="n">html</span> 
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">pandoc</span> <span class="o">-</span><span class="n">f</span> <span class="n">html</span> <span class="o">-</span><span class="n">t</span> <span class="n">asciidoc</span> <span class="o">-</span><span class="n">o</span> <span class="n">output</span><span class="o">.</span><span class="n">asc</span> <span class="nb">input</span><span class="o">.</span><span class="n">html</span>
+</code></pre></div>
+<h2 id="asciidoc-to-html">ASCIIDOC to HTML<a class="headerlink" href="#asciidoc-to-html" title="Permanent link">&para;</a></h2>
+<p><a href="https://rmoff.net/2020/04/16/converting-from-asciidoc-to-google-docs-and-ms-word/">https://rmoff.net/2020/04/16/converting-from-asciidoc-to-google-docs-and-ms-word/</a></p>
+<div class="highlight"><pre><span></span><code><span class="n">asciidoctor</span> <span class="o">--</span><span class="n">backend</span> <span class="n">html5</span> <span class="o">-</span><span class="n">a</span> <span class="n">data</span><span class="o">-</span><span class="n">uri</span> <span class="nb">input</span><span class="o">.</span><span class="n">adoc</span>
+</code></pre></div>
+<h2 id="asciidoc-to-docx">ASCIIDOC to Docx<a class="headerlink" href="#asciidoc-to-docx" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code><span class="n">INPUT_ADOC</span><span class="o">=</span><span class="n">my_input_file</span><span class="o">.</span><span class="n">adoc</span>
+<span class="n">asciidoctor</span> <span class="o">--</span><span class="n">backend</span> <span class="n">docbook</span> <span class="o">--</span><span class="n">out</span><span class="o">-</span><span class="n">file</span> <span class="o">-</span> <span class="err">$</span><span class="n">INPUT_ADOC</span><span class="o">|</span> \
+<span class="n">pandoc</span> <span class="o">--</span><span class="kn">from</span> <span class="nn">docbook</span> <span class="o">--</span><span class="n">to</span> <span class="n">docx</span> <span class="o">--</span><span class="n">output</span> <span class="err">$</span><span class="n">INPUT_ADOC</span><span class="o">.</span><span class="n">docx</span>
+
+<span class="c1"># On the Mac, this will open the generated file in MS Word</span>
+<span class="nb">open</span> <span class="err">$</span><span class="n">INPUT_ADOC</span><span class="o">.</span><span class="n">docx</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">asciidoctor</span> <span class="o">--</span><span class="n">backend</span> <span class="n">docbook</span> <span class="o">--</span><span class="n">out</span><span class="o">-</span><span class="n">file</span> <span class="o">-</span> <span class="err">$</span><span class="n">INPUT_ADOC</span><span class="o">|</span> \
+<span class="n">pandoc</span> <span class="o">--</span><span class="kn">from</span> <span class="nn">docbook</span> <span class="o">--</span><span class="n">to</span> <span class="n">docx</span> <span class="o">--</span><span class="n">output</span> <span class="err">$</span><span class="n">INPUT_ADOC</span><span class="o">.</span><span class="n">docx</span> \
+       <span class="o">--</span><span class="n">highlight</span><span class="o">-</span><span class="n">style</span> <span class="n">espresso</span>
+</code></pre></div></p>
+<div class="highlight"><pre><span></span><code><span class="n">asciidoctor</span> <span class="o">--</span><span class="n">backend</span> <span class="n">docbook</span> <span class="o">--</span><span class="n">out</span><span class="o">-</span><span class="n">file</span> <span class="o">-</span> <span class="err">$</span><span class="n">INPUT_ADOC</span><span class="o">|</span> \
+<span class="n">pandoc</span> <span class="o">--</span><span class="kn">from</span> <span class="nn">docbook</span> <span class="o">--</span><span class="n">to</span> <span class="n">docx</span> <span class="o">--</span><span class="n">output</span> <span class="err">$</span><span class="n">INPUT_ADOC</span><span class="o">.</span><span class="n">docx</span> \
+       <span class="o">--</span><span class="n">highlight</span><span class="o">-</span><span class="n">style</span> <span class="n">my</span><span class="o">.</span><span class="n">theme</span>
+</code></pre></div>
+<h2 id="ascii-to-docbook">ASCII to Docbook<a class="headerlink" href="#ascii-to-docbook" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">asciidoctor</span> <span class="o">-</span><span class="n">a</span> <span class="n">data</span><span class="o">-</span><span class="n">uri</span> <span class="o">-</span><span class="n">a</span> <span class="n">icons</span> <span class="o">-</span><span class="n">b</span> <span class="n">docbook</span> <span class="n">wagetype_dev</span><span class="o">.</span><span class="n">adoc</span>
 </code></pre></div>
 <h2 id="wkhtmltopdf">wkhtmltopdf<a class="headerlink" href="#wkhtmltopdf" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="n">wkhtmltopdf</span> <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="mf">127.0.0.1</span><span class="p">:</span><span class="mi">4000</span><span class="o">/</span><span class="n">docs</span><span class="o">/</span><span class="n">CSharpCodingStandards</span><span class="o">.</span><span class="n">html</span> <span class="n">google</span><span class="o">.</span><span class="n">pdf</span>

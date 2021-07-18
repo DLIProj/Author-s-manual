@@ -355,29 +355,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#antora-process" class="md-nav__link">
-    Antora process
+  <a href="#antora-lunr" class="md-nav__link">
+    Antora Lunr
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conversion" class="md-nav__link">
-    Conversion
+  <a href="#install-http-server" class="md-nav__link">
+    Install http server
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#serve" class="md-nav__link">
-    Serve
+  <a href="#asciidoctor-pdf" class="md-nav__link">
+    asciidoctor pdf
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#misc" class="md-nav__link">
-    Misc
+  <a href="#npm-clean-install" class="md-nav__link">
+    NPM clean install
   </a>
   
 </li>
@@ -512,29 +512,29 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#antora-process" class="md-nav__link">
-    Antora process
+  <a href="#antora-lunr" class="md-nav__link">
+    Antora Lunr
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#conversion" class="md-nav__link">
-    Conversion
+  <a href="#install-http-server" class="md-nav__link">
+    Install http server
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#serve" class="md-nav__link">
-    Serve
+  <a href="#asciidoctor-pdf" class="md-nav__link">
+    asciidoctor pdf
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#misc" class="md-nav__link">
-    Misc
+  <a href="#npm-clean-install" class="md-nav__link">
+    NPM clean install
   </a>
   
 </li>
@@ -557,42 +557,25 @@
                 
                 
                 <h1 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h1>
+<p>Refer to the installation doc:
+<a href="https://docs.antora.org/antora/2.3/install-and-run-quickstart/">https://docs.antora.org/antora/2.3/install-and-run-quickstart/</a></p>
 <p>Include
 <a href="https://gitlab.com/antora/antora/-/issues/596">https://gitlab.com/antora/antora/-/issues/596</a></p>
-<h2 id="antora-process">Antora process<a class="headerlink" href="#antora-process" title="Permanent link">&para;</a></h2>
-<ol>
-<li>
-<p>Convert docx to html
-pandoc -f docx -t html -s -o PMM.html PMM.docx</p>
-</li>
-<li>
-<p>Clean html</p>
-</li>
-<li>
-<p>Convert html to md
-pandoc -s -r html pmm.html -o pmm.md</p>
-</li>
-<li>
-<p>Convert md to ascii
-Webpage to docx
-pandoc --reference-doc pandocTheme.docx -f html -t docx -o HugiOmg.docx <a href="http://127.0.0.1:5000/ess/performance-management/index.html#_plan_assignment">http://127.0.0.1:5000/ess/performance-management/index.html#_plan_assignment</a>
-wkhtmltopdf <a href="http://127.0.0.1:4000/docs/CSharpCodingStandards.html">http://127.0.0.1:4000/docs/CSharpCodingStandards.html</a> google.pdf</p>
-</li>
-</ol>
-<h2 id="conversion">Conversion<a class="headerlink" href="#conversion" title="Permanent link">&para;</a></h2>
-<p>pip3 uninstall mkpdfs-mkdocs</p>
-<h2 id="serve">Serve<a class="headerlink" href="#serve" title="Permanent link">&para;</a></h2>
-<ol>
-<li>Install
-npm i -g http-server
-yarn global add http-server</li>
-</ol>
-<p>npm i -g <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/asciidoctor/core" title="GitHub Repository: asciidoctor/core">asciidoctor/core</a> asciidoctor-pdf
-npm run clean-install and then npm run build</p>
-<p>gem install asciidoctor</p>
-<h2 id="misc">Misc<a class="headerlink" href="#misc" title="Permanent link">&para;</a></h2>
-<p>npm i -g <a class="magiclink magiclink-github magiclink-repository" href="https://github.com/asciidoctor/core" title="GitHub Repository: asciidoctor/core">asciidoctor/core</a> asciidoctor-pdf
-npm run clean-install and then npm run build</p>
+<h2 id="antora-lunr">Antora Lunr<a class="headerlink" href="#antora-lunr" title="Permanent link">&para;</a></h2>
+<p><a href="https://github.com/Mogztter/antora-lunr#readme">https://github.com/Mogztter/antora-lunr#readme</a></p>
+<h2 id="install-http-server">Install http server<a class="headerlink" href="#install-http-server" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">i</span> <span class="o">-</span><span class="n">g</span> <span class="n">http</span><span class="o">-</span><span class="n">server</span>
+<span class="n">OR</span>
+<span class="n">yarn</span> <span class="k">global</span> <span class="n">add</span> <span class="n">http</span><span class="o">-</span><span class="n">server</span>
+</code></pre></div>
+<h2 id="asciidoctor-pdf">asciidoctor pdf<a class="headerlink" href="#asciidoctor-pdf" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">i</span> <span class="o">-</span><span class="n">g</span> <span class="nd">@asciidoctor</span><span class="o">/</span><span class="n">core</span> <span class="n">asciidoctor</span><span class="o">-</span><span class="n">pdf</span>
+</code></pre></div>
+<h2 id="npm-clean-install">NPM clean install<a class="headerlink" href="#npm-clean-install" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">run</span> <span class="n">clean</span><span class="o">-</span><span class="n">install</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">npm</span> <span class="n">run</span> <span class="n">build</span>
+</code></pre></div>
                 
               
               
