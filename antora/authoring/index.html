@@ -386,33 +386,6 @@
     Antora fetch local lunr
   </a>
   
-    <nav class="md-nav" aria-label="Antora fetch local lunr">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aantora-playbookyml" class="md-nav__link">
-    aantora-playbook.yml
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#author-modeyml" class="md-nav__link">
-    author-mode.yml
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-playbookyml" class="md-nav__link">
-    local-playbook.yml
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -450,6 +423,13 @@
         <li class="md-nav__item">
   <a href="#doctype-book-level-0-error" class="md-nav__link">
     Doctype book level 0 error
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source code
   </a>
   
 </li>
@@ -603,33 +583,6 @@
     Antora fetch local lunr
   </a>
   
-    <nav class="md-nav" aria-label="Antora fetch local lunr">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#aantora-playbookyml" class="md-nav__link">
-    aantora-playbook.yml
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#author-modeyml" class="md-nav__link">
-    author-mode.yml
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#local-playbookyml" class="md-nav__link">
-    local-playbook.yml
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
         
           <li class="md-nav__item">
@@ -671,6 +624,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#source-code" class="md-nav__link">
+    Source code
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -697,15 +657,17 @@
 <span class="n">antora</span> <span class="n">local</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span> 
 </code></pre></div>
 <h3 id="antora-fetch-local-lunr">Antora fetch local lunr<a class="headerlink" href="#antora-fetch-local-lunr" title="Permanent link">&para;</a></h3>
-<h4 id="aantora-playbookyml">aantora-playbook.yml<a class="headerlink" href="#aantora-playbookyml" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENABLED=true&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENGINE=lunr&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">antora</span> <span class="o">--</span><span class="n">generator</span> <span class="n">antora</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">lunr</span> <span class="n">antora</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
+<table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">antora</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
+<span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENABLED=true&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENGINE=lunr&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">antora</span> <span class="o">--</span><span class="n">generator</span> <span class="n">antora</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">lunr</span> <span class="n">antora</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
+
+<span class="n">local</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
+<span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENABLED=true&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENGINE=lunr&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">antora</span> <span class="o">--</span><span class="n">generator</span> <span class="n">antora</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">lunr</span> <span class="n">local</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
 </code></pre></div>
-<h4 id="author-modeyml">author-mode.yml<a class="headerlink" href="#author-modeyml" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENABLED=true&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENGINE=lunr&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">antora</span> <span class="o">--</span><span class="n">generator</span> <span class="n">antora</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">lunr</span> <span class="n">author</span><span class="o">-</span><span class="n">mode</span><span class="o">.</span><span class="n">yml</span>
-</code></pre></div>
-<h4 id="local-playbookyml">local-playbook.yml<a class="headerlink" href="#local-playbookyml" title="Permanent link">&para;</a></h4>
-<div class="highlight"><pre><span></span><code><span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENABLED=true&quot;</span> <span class="o">&amp;&amp;</span> <span class="nb">set</span> <span class="s2">&quot;DOCSEARCH_ENGINE=lunr&quot;</span> <span class="o">&amp;&amp;</span> <span class="n">antora</span> <span class="o">--</span><span class="n">generator</span> <span class="n">antora</span><span class="o">-</span><span class="n">site</span><span class="o">-</span><span class="n">generator</span><span class="o">-</span><span class="n">lunr</span> <span class="n">local</span><span class="o">-</span><span class="n">playbook</span><span class="o">.</span><span class="n">yml</span>
-</code></pre></div>
+</td></tr></table>
 <h3 id="serve">Serve<a class="headerlink" href="#serve" title="Permanent link">&para;</a></h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -742,6 +704,22 @@
 <span class="p">:</span><span class="n">sectnums</span><span class="p">:</span> 
 <span class="p">:</span><span class="n">sectnumoffset</span><span class="p">:</span> <span class="mi">11</span>  <span class="p">(</span><span class="n">chapter</span> <span class="n">minus</span> <span class="mi">1</span><span class="p">)</span>
 <span class="p">:</span><span class="n">leveloffset</span><span class="p">:</span> <span class="mi">1</span>
+</code></pre></div>
+<h2 id="source-code">Source code<a class="headerlink" href="#source-code" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">,</span><span class="n">java</span><span class="p">]</span>
+<span class="o">----</span>
+<span class="n">include</span><span class="p">::</span><span class="n">example</span><span class="err">$</span><span class="n">HelloWorld</span><span class="o">.</span><span class="n">java</span><span class="p">[]</span>
+<span class="o">----</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">,</span><span class="n">java</span><span class="p">]</span>
+<span class="o">----</span>
+<span class="n">include</span><span class="p">::</span><span class="n">ROOT</span><span class="p">:</span><span class="n">example</span><span class="err">$</span><span class="n">output</span><span class="o">/</span><span class="n">query</span><span class="o">-</span><span class="nb">max</span><span class="o">.</span><span class="n">json</span><span class="p">[]</span>
+<span class="o">----</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">]</span>
+<span class="o">----</span>
+<span class="c1"># Insert logic here</span>
+<span class="o">----</span>
 </code></pre></div>
                 
               

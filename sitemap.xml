@@ -2,42 +2,42 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://dliproj.github.io/author-s-manual/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dliproj.github.io/author-s-manual/antora/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dliproj.github.io/author-s-manual/antora/authoring/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dliproj.github.io/author-s-manual/antora/content-reuse/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dliproj.github.io/author-s-manual/antora/conversion/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dliproj.github.io/author-s-manual/mkdocs/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dliproj.github.io/author-s-manual/mkdocs/authoring/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
          <loc>https://dliproj.github.io/author-s-manual/mkdocs/conversion/</loc>
-         <lastmod>2021-07-18</lastmod>
+         <lastmod>2021-07-20</lastmod>
          <changefreq>daily</changefreq>
     </url>
 </urlset>
