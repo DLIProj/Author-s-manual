@@ -24,19 +24,19 @@ set "DOCSEARCH_ENABLED=true" && set "DOCSEARCH_ENGINE=lunr" && antora --generato
 
 ### Serve
 
-``` python linenums="1"
+``` asciidoc linenums="1"
 http-server build/site -c-1
 http-server build/site -c-1 -p 5000
 -c-1 flag to disable caching
 ``` 
 
-``` python 
+``` asciidoc 
 http-server build/site -c-1 -p 5000 DDOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora site.yml
 ```
 
 ## Formatting
 
-``` python
+``` asciidoc
 [%autowidth]
 |===
 | A
@@ -48,23 +48,23 @@ http-server build/site -c-1 -p 5000 DDOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lun
 ### Include
 
 **Include partials**
-``` python
+``` asciidoc
 include::version@component:module:partial$name-of-file.adoc[optional attributes]
 ``` 
 
 **Include from examples folder**
-``` python
+``` asciidoc
 ++++
 include::example$process-overview-table.html[]
 ++++ 
 ``` 
-``` python
+``` asciidoc
 include::version@component:module:example$name-of-file.ext[optional attributes]
 ``` 
 https://gitlab.com/antora/antora/-/issues/596
 
 ## Doctype book level 0 error
-``` python
+``` asciidoc
 = Book Title
 :chapter: 12
 :sectnums: 
@@ -74,21 +74,21 @@ https://gitlab.com/antora/antora/-/issues/596
 
 ## Source code 
 
-``` python
+``` asciidoc
 [source,java]
 ----
 include::example$HelloWorld.java[]
 ----
 ``` 
 
-``` python
+``` asciidoc
 [source,java]
 ----
 include::ROOT:example$output/query-max.json[]
 ----
 ``` 
 
-``` python
+``` asciidoc
 [source]
 ----
 # Insert logic here
@@ -97,7 +97,7 @@ include::ROOT:example$output/query-max.json[]
 
 ## Admonitions
 
-``` python
+``` asciidoc
 [IMPORTANT]
 .Optional Title
 ====
@@ -110,7 +110,7 @@ Use an example block to create an admonition that contains complex content, such
 ====
 ``` 
 
-``` python
+``` asciidoc
 [NOTE.think,caption=RESULTS]
 ====
 * The following validation messages appear if any of the corresponding validation issues exist.
