@@ -71,3 +71,65 @@ https://gitlab.com/antora/antora/-/issues/596
 :sectnumoffset: 11  (chapter minus 1)
 :leveloffset: 1
 ``` 
+
+## Source code 
+
+``` python
+[source,java]
+----
+include::example$HelloWorld.java[]
+----
+``` 
+
+``` python
+[source,java]
+----
+include::ROOT:example$output/query-max.json[]
+----
+``` 
+
+``` python
+[source]
+----
+# Insert logic here
+----
+``` 
+
+## Admonitions
+
+``` python
+[IMPORTANT]
+.Optional Title
+====
+Use an example block to create an admonition that contains complex content, such as (but not limited to):
+
+* Lists
+* Multiple paragraphs
+* Source code
+* Images
+====
+``` 
+
+``` python
+[NOTE.think,caption=RESULTS]
+====
+* The following validation messages appear if any of the corresponding validation issues exist.
+** Please Add Employees
+====
+``` 
+
+## Tables
+
+```asciidoc
+[cols="1,1"]
+|===
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+|===
+```
