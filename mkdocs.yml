@@ -1,6 +1,6 @@
 # Project information
-site_name: 'PeachPie Documentation'
-site_description: 'PeachPie - PHP Compiler for .NET - Documentation'
+site_name: 'DLI Authors Guide'
+site_description: 'DLI Docs - Authoring guide'
 site_url: 'https://dliproj.github.io/author-s-manual'
 
 # Repository
@@ -16,17 +16,33 @@ theme:
   custom_dir: 'custom_theme'
   language: 'en'
   palette:
-    primary: 'indigo'
-    accent: 'indigo'
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/toggle-switch-off-outline
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
   icon:
     logo: material/home
     repo: fontawesome/brands/github
   favicon: img/favicon.ico
   logo: img/logo.png
   features:
-    - tabs
-    - instant
+    - content.tabs.link
+    # - navigation.instant
+    - navigation.sections
     - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
     
   # Don't include MkDocs' JavaScript
   include_search_page: false
@@ -50,26 +66,42 @@ extra:
 # Extensions
 markdown_extensions:
   - admonition
-  - pymdownx.tasklist:
-      custom_checkbox: true
-  - pymdownx.inlinehilite
-  - pymdownx.magiclink
-  - pymdownx.smartsymbols
+  - abbr
+  - attr_list
+  - def_list
+  - footnotes
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
   - pymdownx.superfences:
       custom_fences:
         - name: mermaid
           class: mermaid-experimental
           format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
   - pymdownx.tilde
-  - pymdownx.keys
-  - pymdownx.mark
-  - pymdownx.details
-  - pymdownx.progressbar
-  - codehilite:
-      guess_lang: false
-  - toc:
-      permalink: "#"
 
 # plugins
 plugins:

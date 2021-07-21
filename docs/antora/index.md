@@ -1,13 +1,10 @@
 # Install
 
-Refer to the installation doc:
-https://docs.antora.org/antora/2.3/install-and-run-quickstart/
-
-Include
-https://gitlab.com/antora/antora/-/issues/596
+Refer to the <a href="https://docs.antora.org/antora/2.3/install-and-run-quickstart/" target="_blank">Antora Installation guide</a>
 
 ## Antora Lunr
-https://github.com/Mogztter/antora-lunr#readme
+
+Refer to the <a href="https://github.com/Mogztter/antora-lunr#readme" target="_blank">Antora Lunr guide</a>
 
 ## Install http server
 ``` python 

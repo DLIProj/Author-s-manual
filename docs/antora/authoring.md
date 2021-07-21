@@ -1,14 +1,5 @@
 # Authoring
 
-Antora authring guidelines
-
-
-## Antora process
-1. Do conversion (HTML/DocX/Markdown)
-2. Clean html
-3. Convert html to md
-4. Convert md to ascii
-
 
 ## Antora commands
 
@@ -16,35 +7,20 @@ Antora authring guidelines
 ``` python 
 antora antora-playbook.yml
 antora --fetch antora-playbook.yml
-antora --fetch author-mode.yml 
+antora --fetch local-playbook.yml 
+antora local-playbook.yml 
 ```
 
 ### Antora fetch local lunr
 
-#### aantora-playbook.yml
-``` python 
-set "DOCSEARCH_ENABLED=true" && set "DOCSEARCH_ENGINE=lunr" && antora --generator antora-site-generator-lunr antora-playbook.yml
-```
-#### author-mode.yml
-``` python 
-set "DOCSEARCH_ENABLED=true" && set "DOCSEARCH_ENGINE=lunr" && antora --generator antora-site-generator-lunr author-mode.yml
-```
-
-#### local-playbook.yml
-``` python
-set "DOCSEARCH_ENABLED=true" && set "DOCSEARCH_ENGINE=lunr" && antora --generator antora-site-generator-lunr local-playbook.yml
-``` 
-
-### Install local serve
-1. Install server
 
 ``` python linenums="1"
-npm i -g http-server
+antora-playbook.yml
+set "DOCSEARCH_ENABLED=true" && set "DOCSEARCH_ENGINE=lunr" && antora --generator antora-site-generator-lunr antora-playbook.yml
 
-OR 
-
-yarn global add http-server
-``` 
+local-playbook.yml
+set "DOCSEARCH_ENABLED=true" && set "DOCSEARCH_ENGINE=lunr" && antora --generator antora-site-generator-lunr local-playbook.yml
+```
 
 ### Serve
 
@@ -70,13 +46,22 @@ http-server build/site -c-1 -p 5000 DDOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lun
 ``` 
 
 ### Include
+
+**Include partials**
+``` python
+include::version@component:module:partial$name-of-file.adoc[optional attributes]
+``` 
+
+**Include from examples folder**
+``` python
+++++
+include::example$process-overview-table.html[]
+++++ 
+``` 
+``` python
+include::version@component:module:example$name-of-file.ext[optional attributes]
+``` 
 https://gitlab.com/antora/antora/-/issues/596
-
-### Mindfulness
-https://www.youtube.com/watch?v=7-bPYMAdnnM
-https://www.youtube.com/watch?v=h-CYAQqpvcw
-
-
 
 ## Doctype book level 0 error
 ``` python
@@ -86,3 +71,65 @@ https://www.youtube.com/watch?v=h-CYAQqpvcw
 :sectnumoffset: 11  (chapter minus 1)
 :leveloffset: 1
 ``` 
+
+## Source code 
+
+``` python
+[source,java]
+----
+include::example$HelloWorld.java[]
+----
+``` 
+
+``` python
+[source,java]
+----
+include::ROOT:example$output/query-max.json[]
+----
+``` 
+
+``` python
+[source]
+----
+# Insert logic here
+----
+``` 
+
+## Admonitions
+
+``` python
+[IMPORTANT]
+.Optional Title
+====
+Use an example block to create an admonition that contains complex content, such as (but not limited to):
+
+* Lists
+* Multiple paragraphs
+* Source code
+* Images
+====
+``` 
+
+``` python
+[NOTE.think,caption=RESULTS]
+====
+* The following validation messages appear if any of the corresponding validation issues exist.
+** Please Add Employees
+====
+``` 
+
+## Tables
+
+```asciidoc
+[cols="1,1"]
+|===
+|Cell in column 1, row 1
+|Cell in column 2, row 1
+
+|Cell in column 1, row 2
+|Cell in column 2, row 2
+
+|Cell in column 1, row 3
+|Cell in column 2, row 3
+|===
+```
