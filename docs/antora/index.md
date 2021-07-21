@@ -1,42 +1,30 @@
 # Install
 
+Refer to the installation doc:
+https://docs.antora.org/antora/2.3/install-and-run-quickstart/
 
 Include
 https://gitlab.com/antora/antora/-/issues/596
 
-## Antora process
-1. Convert docx to html
-pandoc -f docx -t html -s -o PMM.html PMM.docx
+## Antora Lunr
+https://github.com/Mogztter/antora-lunr#readme
 
-2. Clean html
-
-3. Convert html to md
-pandoc -s -r html pmm.html -o pmm.md
-
-4. Convert md to ascii
-Webpage to docx
-pandoc --reference-doc pandocTheme.docx -f html -t docx -o HugiOmg.docx http://127.0.0.1:5000/ess/performance-management/index.html#_plan_assignment
-wkhtmltopdf http://127.0.0.1:4000/docs/CSharpCodingStandards.html google.pdf
-
-
-## Conversion
-pip3 uninstall mkpdfs-mkdocs
-
-
-## Serve
-1. Install
+## Install http server
+``` python 
 npm i -g http-server
+OR
 yarn global add http-server
+```
 
-
-
-
+## asciidoctor pdf
+``` python 
 npm i -g @asciidoctor/core asciidoctor-pdf
-npm run clean-install and then npm run build
+```
+## NPM clean install 
+``` python 
+npm run clean-install
+```
 
- 
-gem install asciidoctor
- 
-## Misc
-npm i -g @asciidoctor/core asciidoctor-pdf
-npm run clean-install and then npm run build
+``` python 
+npm run build
+```

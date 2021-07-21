@@ -1,8 +1,7 @@
 # Project information
-site_name: 'DLI Docs Author's manual'
-site_description: 'Authoring guide for DLI Docs Team'
-site_author: 'adarsh'
-site_url: 'https://dliproj.github.io/Author-s-manual'
+site_name: 'PeachPie Documentation'
+site_description: 'PeachPie - PHP Compiler for .NET - Documentation'
+site_url: 'https://dliproj.github.io/author-s-manual'
 
 # Repository
 repo_url: https://github.com/DLIProj/Author-s-manual/
