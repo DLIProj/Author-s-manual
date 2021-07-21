@@ -133,3 +133,13 @@ Use an example block to create an admonition that contains complex content, such
 |Cell in column 2, row 3
 |===
 ```
+
+## Links
+
+```asciidoc
+https://asciidoctor.org[Asciidoctor,window=_blank]
+```
+
+```asciidoc
+https://asciidoctor.org[Asciidoctor]
+```
