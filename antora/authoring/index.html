@@ -713,73 +713,73 @@
 <h3 id="serve">Serve<a class="headerlink" href="#serve" title="Permanent link">&para;</a></h3>
 <table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
-<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code><span class="n">http</span><span class="o">-</span><span class="n">server</span> <span class="n">build</span><span class="o">/</span><span class="n">site</span> <span class="o">-</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span>
-<span class="n">http</span><span class="o">-</span><span class="n">server</span> <span class="n">build</span><span class="o">/</span><span class="n">site</span> <span class="o">-</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span> <span class="o">-</span><span class="n">p</span> <span class="mi">5000</span>
-<span class="o">-</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span> <span class="n">flag</span> <span class="n">to</span> <span class="n">disable</span> <span class="n">caching</span>
+<span class="normal">3</span></pre></div></td><td class="code"><div class="highlight"><pre><span></span><code>http-server build/site -c-1
+http-server build/site -c-1 -p 5000
+-c-1 flag to disable caching
 </code></pre></div>
 </td></tr></table>
-<div class="highlight"><pre><span></span><code><span class="n">http</span><span class="o">-</span><span class="n">server</span> <span class="n">build</span><span class="o">/</span><span class="n">site</span> <span class="o">-</span><span class="n">c</span><span class="o">-</span><span class="mi">1</span> <span class="o">-</span><span class="n">p</span> <span class="mi">5000</span> <span class="n">DDOCSEARCH_ENABLED</span><span class="o">=</span><span class="n">true</span> <span class="n">DOCSEARCH_ENGINE</span><span class="o">=</span><span class="n">lunr</span> <span class="n">antora</span> <span class="n">site</span><span class="o">.</span><span class="n">yml</span>
+<div class="highlight"><pre><span></span><code>http-server build/site -c-1 -p 5000 DDOCSEARCH_ENABLED=true DOCSEARCH_ENGINE=lunr antora site.yml
 </code></pre></div>
 <h2 id="formatting">Formatting<a class="headerlink" href="#formatting" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="o">%</span><span class="n">autowidth</span><span class="p">]</span>
-<span class="o">|===</span>
-<span class="o">|</span> <span class="n">A</span>
-<span class="o">|</span> <span class="n">B</span>
-<span class="o">|</span> <span class="n">C</span>
-<span class="o">|===</span>
+<div class="highlight"><pre><span></span><code>[%autowidth]
+|===
+| A
+| B
+| C
+|===
 </code></pre></div>
 <h3 id="include">Include<a class="headerlink" href="#include" title="Permanent link">&para;</a></h3>
 <p><strong>Include partials</strong>
-<div class="highlight"><pre><span></span><code><span class="n">include</span><span class="p">::</span><span class="n">version</span><span class="nd">@component</span><span class="p">:</span><span class="n">module</span><span class="p">:</span><span class="n">partial</span><span class="err">$</span><span class="n">name</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">file</span><span class="o">.</span><span class="n">adoc</span><span class="p">[</span><span class="n">optional</span> <span class="n">attributes</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code>include::version@component:module:partial$name-of-file.adoc[optional attributes]
 </code></pre></div></p>
 <p><strong>Include from examples folder</strong>
-<div class="highlight"><pre><span></span><code><span class="o">++++</span>
-<span class="n">include</span><span class="p">::</span><span class="n">example</span><span class="err">$</span><span class="n">process</span><span class="o">-</span><span class="n">overview</span><span class="o">-</span><span class="n">table</span><span class="o">.</span><span class="n">html</span><span class="p">[]</span>
-<span class="o">++++</span> 
+<div class="highlight"><pre><span></span><code>++++
+include::example$process-overview-table.html[]
+++++ 
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="n">include</span><span class="p">::</span><span class="n">version</span><span class="nd">@component</span><span class="p">:</span><span class="n">module</span><span class="p">:</span><span class="n">example</span><span class="err">$</span><span class="n">name</span><span class="o">-</span><span class="n">of</span><span class="o">-</span><span class="n">file</span><span class="o">.</span><span class="n">ext</span><span class="p">[</span><span class="n">optional</span> <span class="n">attributes</span><span class="p">]</span>
+<div class="highlight"><pre><span></span><code>include::version@component:module:example$name-of-file.ext[optional attributes]
 </code></pre></div>
 <a href="https://gitlab.com/antora/antora/-/issues/596">https://gitlab.com/antora/antora/-/issues/596</a></p>
 <h2 id="doctype-book-level-0-error">Doctype book level 0 error<a class="headerlink" href="#doctype-book-level-0-error" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="o">=</span> <span class="n">Book</span> <span class="n">Title</span>
-<span class="p">:</span><span class="n">chapter</span><span class="p">:</span> <span class="mi">12</span>
-<span class="p">:</span><span class="n">sectnums</span><span class="p">:</span> 
-<span class="p">:</span><span class="n">sectnumoffset</span><span class="p">:</span> <span class="mi">11</span>  <span class="p">(</span><span class="n">chapter</span> <span class="n">minus</span> <span class="mi">1</span><span class="p">)</span>
-<span class="p">:</span><span class="n">leveloffset</span><span class="p">:</span> <span class="mi">1</span>
+<div class="highlight"><pre><span></span><code>= Book Title
+:chapter: 12
+:sectnums: 
+:sectnumoffset: 11  (chapter minus 1)
+:leveloffset: 1
 </code></pre></div>
 <h2 id="source-code">Source code<a class="headerlink" href="#source-code" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">,</span><span class="n">java</span><span class="p">]</span>
-<span class="o">----</span>
-<span class="n">include</span><span class="p">::</span><span class="n">example</span><span class="err">$</span><span class="n">HelloWorld</span><span class="o">.</span><span class="n">java</span><span class="p">[]</span>
-<span class="o">----</span>
+<div class="highlight"><pre><span></span><code>[source,java]
+----
+include::example$HelloWorld.java[]
+----
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">,</span><span class="n">java</span><span class="p">]</span>
-<span class="o">----</span>
-<span class="n">include</span><span class="p">::</span><span class="n">ROOT</span><span class="p">:</span><span class="n">example</span><span class="err">$</span><span class="n">output</span><span class="o">/</span><span class="n">query</span><span class="o">-</span><span class="nb">max</span><span class="o">.</span><span class="n">json</span><span class="p">[]</span>
-<span class="o">----</span>
+<div class="highlight"><pre><span></span><code>[source,java]
+----
+include::ROOT:example$output/query-max.json[]
+----
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">]</span>
-<span class="o">----</span>
-<span class="c1"># Insert logic here</span>
-<span class="o">----</span>
+<div class="highlight"><pre><span></span><code>[source]
+----
+# Insert logic here
+----
 </code></pre></div>
 <h2 id="admonitions">Admonitions<a class="headerlink" href="#admonitions" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">IMPORTANT</span><span class="p">]</span>
-<span class="o">.</span><span class="n">Optional</span> <span class="n">Title</span>
-<span class="o">====</span>
-<span class="n">Use</span> <span class="n">an</span> <span class="n">example</span> <span class="n">block</span> <span class="n">to</span> <span class="n">create</span> <span class="n">an</span> <span class="n">admonition</span> <span class="n">that</span> <span class="n">contains</span> <span class="nb">complex</span> <span class="n">content</span><span class="p">,</span> <span class="n">such</span> <span class="k">as</span> <span class="p">(</span><span class="n">but</span> <span class="ow">not</span> <span class="n">limited</span> <span class="n">to</span><span class="p">):</span>
+<div class="highlight"><pre><span></span><code>[IMPORTANT]
+.Optional Title
+====
+Use an example block to create an admonition that contains complex content, such as (but not limited to):
 
-<span class="o">*</span> <span class="n">Lists</span>
-<span class="o">*</span> <span class="n">Multiple</span> <span class="n">paragraphs</span>
-<span class="o">*</span> <span class="n">Source</span> <span class="n">code</span>
-<span class="o">*</span> <span class="n">Images</span>
-<span class="o">====</span>
+* Lists
+* Multiple paragraphs
+* Source code
+* Images
+====
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">NOTE</span><span class="o">.</span><span class="n">think</span><span class="p">,</span><span class="n">caption</span><span class="o">=</span><span class="n">RESULTS</span><span class="p">]</span>
-<span class="o">====</span>
-<span class="o">*</span> <span class="n">The</span> <span class="n">following</span> <span class="n">validation</span> <span class="n">messages</span> <span class="n">appear</span> <span class="k">if</span> <span class="nb">any</span> <span class="n">of</span> <span class="n">the</span> <span class="n">corresponding</span> <span class="n">validation</span> <span class="n">issues</span> <span class="n">exist</span><span class="o">.</span>
-<span class="o">**</span> <span class="n">Please</span> <span class="n">Add</span> <span class="n">Employees</span>
-<span class="o">====</span>
+<div class="highlight"><pre><span></span><code>[NOTE.think,caption=RESULTS]
+====
+* The following validation messages appear if any of the corresponding validation issues exist.
+** Please Add Employees
+====
 </code></pre></div>
 <h2 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>[cols=&quot;1,1&quot;]
