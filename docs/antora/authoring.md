@@ -61,7 +61,7 @@ include::example$process-overview-table.html[]
 ``` asciidoc
 include::version@component:module:example$name-of-file.ext[optional attributes]
 ``` 
-https://gitlab.com/antora/antora/-/issues/596
+[Support non-AsciiDoc content pages (such as HTML)](https://gitlab.com/antora/antora/-/issues/596) 
 
 ## Doctype book level 0 error
 ``` asciidoc
