@@ -121,16 +121,16 @@ Use an example block to create an admonition that contains complex content, such
 ## Tables
 
 ```asciidoc
-[cols="1,1"]
+[width="75%",cols="1,1"]
 |===
-|Cell in column 1, row 1
-|Cell in column 2, row 1
+|Cell in column 1 Row 1
+|Cell in column 2 Row 1
 
-|Cell in column 1, row 2
-|Cell in column 2, row 2
+|Cell in column 1 Row 2
+|Cell in column 2 Row 2
 
-|Cell in column 1, row 3
-|Cell in column 2, row 3
+|Cell in column 1 Row 3
+|Cell in column 2 Row 3
 |===
 ```
 
@@ -142,4 +142,21 @@ https://asciidoctor.org[Asciidoctor,window=_blank]
 
 ```asciidoc
 https://asciidoctor.org[Asciidoctor]
+```
+
+## List continuation
+```asciidoc
+. Step 1.
++
+* Bullet list Item 1
+* Bullet list Item 1
+
++
+To set permission, select the *Allow* check box next to the user/ groups.
++
+image:ess-install-image3.png[]
++
+To add any user accounts or groups that are missing from the **Security** tab >> **Group or usernames** list, refer to the link:#_grant_permission_for_the_users_not_listed_in_the_security_tab[Grant permission for the users not listed in the Security tab] section.
+
+.  Click the **Apply** button and then close the dialog box.
 ```
