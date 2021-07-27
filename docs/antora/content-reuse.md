@@ -23,3 +23,26 @@ Recently, I was working on a conditional flow, and I dearly wished for an `ifels
 https://github.com/asciidoctor/asciidoctor/issues/514
 
 I also have an idea that could cover the most common use case for ifeval. Something like: ifdef:attribute-name[expected-value]
+
+## Example
+
+``` asciidoc 
+ifeval::["{myclient}" == ""]
+*Step 1*: User logs into ESS and #opens *DLI account*#.
+endif::[]
+
+ifeval::["{myclient}" == "HLB"]
+*Step 1*: User logs into ESS and #opens *DLI account* and clicks *Go*#.
+endif::[]
+
+ifeval::["{myclient}" == "DAS"]
+*Step 1*: User logs into ESS and #opens *{myclient} account*#.
+endif::[]
+
+*Step 2*: User goes to *Time Management* Module.
+
+*Step 3*: User selects *Employee Timesheet*, make changes if required and then saves the changes.
+
+*Step 4*: User logs out from ESS.
+```  
+
