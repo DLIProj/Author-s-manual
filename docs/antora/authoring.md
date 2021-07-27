@@ -161,19 +161,19 @@ https://asciidoctor.org[Asciidoctor]
 
 ## List continuation
 ```java
-. Step 1.
+. Step1.
 +
 * Bullet list Item 1
 * Bullet list Item 1
 
 +
-This is Step 2.
+This is Step2.
 +
 image:ess-install-image3.png[]
 +
-This is Line 2 of Step 2.
+This is Line2 of Step2.
 
-.  This is Step 3.
+.  This is Step3.
 ```
 
 ```java
