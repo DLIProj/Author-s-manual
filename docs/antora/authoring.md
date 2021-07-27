@@ -167,13 +167,13 @@ https://asciidoctor.org[Asciidoctor]
 * Bullet list Item 1
 
 +
-To set permission, select the *Allow* check box next to the user/ groups.
+This is Step 2.
 +
 image:ess-install-image3.png[]
 +
-To add any user accounts or groups that are missing from the **Security** tab >> **Group or usernames** list, refer to the link:#_grant_permission_for_the_users_not_listed_in_the_security_tab[Grant permission for the users not listed in the Security tab] section.
+This is Line 2 of Step 2.
 
-.  Click the **Apply** button and then close the dialog box.
+.  This is Step 3.
 ```
 
 ```java
