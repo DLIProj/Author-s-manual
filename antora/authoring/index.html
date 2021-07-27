@@ -731,16 +731,16 @@ include::example$process-overview-table.html[]
 </code></pre></div>
 <a href="https://gitlab.com/antora/antora/-/issues/596">Support non-AsciiDoc content pages (such as HTML)</a> </p>
 <h2 id="doctype-book-level-0-error">Doctype book level 0 error<a class="headerlink" href="#doctype-book-level-0-error" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>= Book Title
-:chapter: 12
-:sectnums: 
-:sectnumoffset: 11  (chapter minus 1)
-:leveloffset: 1
+<div class="highlight"><pre><span></span><code><span class="o">=</span> <span class="n">Book</span> <span class="n">Title</span>
+<span class="p">:</span><span class="n">chapter</span><span class="p">:</span> <span class="mi">12</span>
+<span class="p">:</span><span class="n">sectnums</span><span class="p">:</span> 
+<span class="p">:</span><span class="n">sectnumoffset</span><span class="p">:</span> <span class="mi">11</span>  <span class="p">(</span><span class="n">chapter</span> <span class="n">minus</span> <span class="mi">1</span><span class="p">)</span>
+<span class="p">:</span><span class="n">leveloffset</span><span class="p">:</span> <span class="mi">1</span>
 </code></pre></div>
 <h2 id="source-code">Source code<a class="headerlink" href="#source-code" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="o">[</span><span class="n">source</span><span class="p">,</span><span class="n">java</span><span class="o">]</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">,</span><span class="n">java</span><span class="p">]</span>
 <span class="o">----</span>
-<span class="nl">include:</span><span class="p">:</span><span class="n">example$HelloWorld</span><span class="p">.</span><span class="na">java</span><span class="o">[]</span>
+<span class="n">include</span><span class="p">::</span><span class="n">example</span><span class="err">$</span><span class="n">HelloWorld</span><span class="o">.</span><span class="n">java</span><span class="p">[]</span>
 <span class="o">----</span>
 </code></pre></div>
 <div class="highlight"><pre><span></span><code><span class="p">[</span><span class="n">source</span><span class="p">,</span><span class="n">java</span><span class="p">]</span>
