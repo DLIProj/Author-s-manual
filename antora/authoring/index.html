@@ -796,6 +796,60 @@ http-server build/site -c-1 -p 5000
 <span class="o">|</span><span class="n">Washington</span><span class="p">,</span> <span class="n">D</span><span class="p">.</span><span class="na">C</span><span class="p">.</span>
 <span class="o">|===</span>
 </code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="o">==</span> <span class="n">Table</span> <span class="n">cell</span> <span class="n">span</span>
+
+<span class="p">.</span><span class="na">Cell</span> <span class="n">spans</span> <span class="n">columns</span>
+<span class="o">|===</span>
+<span class="o">|</span> <span class="n">Name</span> <span class="o">|</span> <span class="n">Description</span>
+
+<span class="o">|</span> <span class="n">Asciidoctor</span>
+<span class="o">|</span> <span class="n">Awesome</span> <span class="n">way</span> <span class="n">to</span> <span class="n">write</span> <span class="n">documentation</span>
+
+<span class="c1">// This cell spans 2 columns, indicated</span>
+<span class="c1">// by the number before the + sign.</span>
+<span class="c1">// The + sign</span>
+<span class="c1">// tells Asciidoctor to span this</span>
+<span class="c1">// cell over multiple columns.</span>
+<span class="mi">2</span><span class="o">+|</span> <span class="n">The</span> <span class="n">statements</span> <span class="n">above</span> <span class="n">say</span> <span class="n">it</span> <span class="n">all</span>
+
+<span class="o">|===</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="na">Cell</span> <span class="n">spans</span> <span class="n">rows</span>
+<span class="o">|===</span>
+<span class="o">|</span> <span class="n">Name</span> <span class="o">|</span> <span class="n">Description</span>
+
+<span class="c1">// This cell spans 2 rows,</span>
+<span class="c1">// because the number after</span>
+<span class="c1">// the dot (.) specifies the number</span>
+<span class="c1">// of rows to span. The + sign</span>
+<span class="c1">// tells Asciidoctor to span this</span>
+<span class="c1">// cell over multiple rows.</span>
+<span class="mf">.2</span><span class="o">+|</span> <span class="n">Asciidoctor</span>
+<span class="o">|</span> <span class="n">Awesome</span> <span class="n">way</span> <span class="n">to</span> <span class="n">write</span> <span class="n">documentation</span>
+
+<span class="o">|</span> <span class="n">Works</span> <span class="n">on</span> <span class="n">the</span> <span class="n">JVM</span>
+
+<span class="o">|===</span>
+</code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="na">Cell</span> <span class="n">spans</span> <span class="n">both</span> <span class="n">rows</span> <span class="n">and</span> <span class="n">columns</span>
+<span class="o">|===</span>
+<span class="o">|</span> <span class="n">Col1</span> <span class="o">|</span> <span class="n">Col2</span> <span class="o">|</span> <span class="n">Col</span> <span class="mi">3</span>
+
+<span class="c1">// We can combine the numbers for</span>
+<span class="c1">// row and column span within one</span>
+<span class="c1">// cell specifier.</span>
+<span class="c1">// The number before the dot (.)</span>
+<span class="c1">// is the number of columns to span,</span>
+<span class="c1">// the number after the dot (.)</span>
+<span class="c1">// is the number of rows to span.</span>
+<span class="mf">2.2</span><span class="o">+|</span> <span class="n">Cell</span> <span class="n">spans</span> <span class="mi">2</span> <span class="n">cols</span><span class="p">,</span> <span class="mi">2</span> <span class="n">rows</span>
+<span class="o">|</span> <span class="n">Row</span> <span class="mi">1</span><span class="p">,</span> <span class="n">Col</span> <span class="mi">3</span>
+
+<span class="o">|</span> <span class="n">Row</span> <span class="mi">2</span><span class="p">,</span> <span class="n">Col</span> <span class="mi">3</span>
+
+<span class="o">|===</span>
+</code></pre></div>
+<p>Refer to <a href="https://blog.mrhaki.com/2014/12/awesome-asciidoctor-span-cell-over-rows.html">Span/ Merge Cell over Rows and Columns</a> for more details</p>
 <h2 id="links">Links<a class="headerlink" href="#links" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code><span class="nl">https:</span><span class="c1">//asciidoctor.org[Asciidoctor,window=_blank]</span>
 </code></pre></div>
