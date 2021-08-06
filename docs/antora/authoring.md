@@ -148,6 +148,68 @@ Use an example block to create an admonition that contains complex content, such
 |===
 ```
 
+### Tables - Span/ Merge Cell over Rows and Columns
+```java
+== Table cell span
+ 
+.Cell spans columns
+|===
+| Name | Description
+ 
+| Asciidoctor
+| Awesome way to write documentation
+ 
+// This cell spans 2 columns, indicated
+// by the number before the + sign.
+// The + sign
+// tells Asciidoctor to span this
+// cell over multiple columns.
+2+| The statements above say it all
+ 
+|===
+```
+
+```java
+.Cell spans rows
+|===
+| Name | Description
+ 
+// This cell spans 2 rows,
+// because the number after
+// the dot (.) specifies the number
+// of rows to span. The + sign
+// tells Asciidoctor to span this
+// cell over multiple rows.
+.2+| Asciidoctor
+| Awesome way to write documentation
+ 
+| Works on the JVM
+ 
+|===
+```
+
+```java
+.Cell spans both rows and columns
+|===
+| Col1 | Col2 | Col 3
+ 
+// We can combine the numbers for
+// row and column span within one
+// cell specifier.
+// The number before the dot (.)
+// is the number of columns to span,
+// the number after the dot (.)
+// is the number of rows to span.
+2.2+| Cell spans 2 cols, 2 rows
+| Row 1, Col 3
+ 
+| Row 2, Col 3
+ 
+|===
+```
+
+Refer to [Span/ Merge Cell over Rows and Columns](https://blog.mrhaki.com/2014/12/awesome-asciidoctor-span-cell-over-rows.html) for more details
+
 
 ## Links
 
