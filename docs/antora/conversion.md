@@ -4,15 +4,38 @@
 
 Docx to Markdown with images
 
+1. Install **Panflute**
+
+``` python
+pip install panflute
+```
+2. Create a `remove_img_size.py` (Removes image size attributes in the markdown output while conversion).
+
 ``` python 
-pandoc -o SalaryRegister.md --extract-media=./ SalaryRegister.docx
+import panflute as pf
+
+
+def change_md_link(elem, doc):
+    if isinstance(elem, pf.Image):
+        elem.attributes.pop('width', None)
+        elem.attributes.pop('height', None)
+    return elem
+
+
+if __name__ == "__main__":
+    pf.run_filter(change_md_link)
+```
+3. To convert run the following command
+
+``` python 
+pandoc --extract-media=./ inputFileName.docx -F remove_img_size.py -o outPutfileName.md
 ```
 
 ## Markdown to Docx
+
 ``` python 
 pandoc --reference-doc twocolumns.docx -o UsersGuide18.docx example122.text
 ```
-
 ## HTML to Docx
 ``` python 
 pandoc --reference-doc pandocTheme.docx -f html -t docx -o output.docx input.html
